@@ -1,0 +1,39 @@
+/* Étape 1 : mise en forme du tableau (classes col_number, col_chkbox, col_text) */
+#table_container {
+  width: 70%;
+  margin: 40px auto;               /* tableau au milieu */
+  font-family: Calibri, Arial, sans-serif; /* Calibri en première police */
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  background: #fff;
+}
+table { width: 100%; border-collapse: collapse; }
+th { background: #007bbd; color: #fff; padding: 10px; font-size: 14px; }
+td { padding: 10px; font-size: 14px; border-bottom: 1px solid #e3e3e3; }
+.col_number { text-align: center; width: 70px; }
+.col_chkbox { text-align: center; width: 80px; }
+.col_text   { text-align: left; }
+
+/* Étape 4 : espace résumé */
+#container_summary {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+#container_summary p { margin: 0; }
+#p2 { flex: 1; }
+
+/* Étape 5 : formulaire */
+#form_container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+}
+.form_group { display: flex; align-items: center; gap: 6px; flex: 1; }
+.form_label { font-weight: bold; font-size: 13px; }
+.form_field { flex: 1; min-width: 0; padding: 5px; border: 1px solid #999; }
